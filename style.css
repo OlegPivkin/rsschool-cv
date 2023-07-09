@@ -173,7 +173,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: space-around;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -183,4 +183,171 @@ input[type="radio"].visually-hidden {
   background-position: center -85px;
   padding: 50px 30px 35px;
   width: 100%;
+}
+
+.main-info__img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  filter: grayscale(0.2) brightness(1.05);
+  transition: 0.3s;
+}
+
+.main-info__text-block {
+  padding-left: 30px;
+}
+
+h1.main-info__name {
+  letter-spacing: 0.4em;
+}
+
+.general-info {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.cv-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #ffffff;
+  width: inherit;
+  min-height: 330px;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-sections__item {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 58px 5px 5px 5px;
+}
+
+.cv-sections__itfo--phone {
+  background-image: url(img/phone_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__itfo--email {
+  background-image: url(img/send_inbox.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__itfo--githab {
+  background-image: url(img/github_logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__itfo--discord {
+  background-image: url(img/discord_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__link {
+  text-decoration: none;
+  color: #196c8b;
+  transition: color 0.5s;
+}
+
+.cv-sections__itfo--html {
+  background-image: url(img/html_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__itfo--css {
+  background-image: url(img/css_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__itfo--python {
+  background-image: url(img/icons8-питон.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__itfo--js {
+  background-image: url(img/js_official_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__itfo--git {
+  background-image: url(img/git_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cv-sections__itfo--graphics-editor {
+  background-image: url(img/figma_logo_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 0.9;
+  background-color: #ffffff25;
+  padding: 30px 100px 36px 133px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  width: 401px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 30px;
 }
